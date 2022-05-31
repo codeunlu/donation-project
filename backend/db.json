@@ -1,0 +1,21 @@
+{
+    "users": [
+      { "id": 1, "name": "Mustafa", "surname": "ÜNLÜ", "email": "mstf_unlu@hotmail.com", "password": "123456" }
+    ],
+    "donations": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "total": 12345,
+            "category_id": 2,
+            "created_date": "12.05.2022"
+        }
+    ],
+    "donation_category": [
+        {
+            "id" : 1,
+            "title": "Tema Vakfı",
+            "description": "Tema vakfına ait bağış kategorisi"
+        }
+    ]
+  }
