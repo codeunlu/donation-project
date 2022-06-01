@@ -29,43 +29,55 @@
       "fullName": null,
       "email": null,
       "id": 6
+    },
+    {
+      "fullName": "mustafa ünlü",
+      "email": "mstf_unlu22@gmail.com",
+      "id": 7
     }
   ],
   "donations": [
     {
       "user_email": "mstf_unlu@gmail.com",
       "total": 104,
-      "category_id": "1",
+      "category_id": 1,
       "created_date": "1/6/2022",
       "id": 1
     },
     {
       "user_email": "mstf_unlu2@gmail.com",
       "total": 89.5,
-      "category_id": "1",
+      "category_id": 1,
       "created_date": "1/6/2022",
       "id": 2
     },
     {
       "user_email": "mstf_unlu22@gmail.com",
       "total": 50,
-      "category_id": "1",
+      "category_id": 1,
       "created_date": "1/6/2022",
       "id": 3
     },
     {
       "user_email": "mstf_unlu2222@gmail.com",
       "total": 235,
-      "category_id": "1",
+      "category_id": 1,
       "created_date": "1/6/2022",
       "id": 4
     },
     {
       "user_email": null,
       "total": 106.5,
-      "category_id": "1",
+      "category_id": 1,
       "created_date": "1/6/2022",
       "id": 5
+    },
+    {
+      "user_email": "mstf_unlu22@gmail.com",
+      "total": 125.5,
+      "category_id": 2,
+      "created_date": "1/6/2022",
+      "id": 6
     }
   ],
   "donation_category": [

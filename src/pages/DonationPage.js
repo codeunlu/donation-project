@@ -1,4 +1,4 @@
-import axios from "axios";
+import {API} from "../api/API";
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import DonationCard from "../components/DonationCard";
@@ -33,17 +33,17 @@ function DonationPage() {
       fullName: fullName,
       email: email,
     };
-    const response = await axios.post(`http://localhost:3000/users`, users);
+    const response = await API.post(`users`, users);
     if(response.status === 201){
         const current = new Date();
     
         const donation = {
           user_email: email,
           total: Number(totalPrice),
-          category_id: params.id,
+          category_id: Number(params.id),
           created_date: `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`,
         };
-        const response = await axios.post(`http://localhost:3000/donations`, donation);
+        const response = await API.post(`donations`, donation);
         if(response.status === 201){
             setAlert(true);
             setEmail(null);
