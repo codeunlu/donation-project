@@ -1,19 +1,16 @@
-import { Route, Router, Routes } from "react-router-dom";
-import NavbarItem from "../components/Navbar";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage";
-import ProfilePage from "../pages/ProfilePage";
 import DonationPage from "../pages/DonationPage";
+import { Container } from "react-bootstrap";
 
 function RouterItem() {
   return (
-    <Router>
-      <NavbarItem />
+    <Container>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/profile/:id" element={<ProfilePage />} />
         <Route path="/donation/:id" element={<DonationPage />} />
       </Routes>
-    </Router>
+    </Container>
   );
 }
 
